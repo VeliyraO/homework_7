@@ -8,8 +8,10 @@
   align-items: center;
 }
 
-.client-list-item:not(:last-child) {
-  margin-right: 30px;
+.client-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .client-list-link {
@@ -20,21 +22,19 @@
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
 }
 
 .client-list-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.client-list-link:hover,
-.client-list-link:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-}
-
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-  fill: #2196f3;
+  .client-list-link:hover &,
+  .client-list-link:focus & {
+    fill: #2196f3;
+  }
 }

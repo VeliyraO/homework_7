@@ -2,6 +2,13 @@
   background-color: var(--background-accent);
   padding-top: 60px;
   padding-bottom: 60px;
+  & .logo-link {
+    margin-bottom: 20px;
+  }
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-address {
@@ -13,10 +20,6 @@
 
 .footer-wraper {
   margin-right: 70px;
-}
-
-.footer .logo-link {
-  margin-bottom: 20px;
 }
 
 .logo-white {
@@ -31,10 +34,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-link);
-}
-
-.contact-link-footer:nth-child(-n + 2) {
-  margin-bottom: 10px;
+  &:nth-child(-n + 2) {
+    margin-bottom: 10px;
+  }
 }
 
 .location {
@@ -56,13 +58,10 @@
   margin-bottom: 20px;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
+.social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .mailing {
@@ -80,6 +79,13 @@
   padding: 16px 15px;
   outline: none;
   color: var(--white-accent);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .mailing-form {
@@ -110,14 +116,6 @@
   border-radius: 4px;
   border: none;
   padding: 10px 30px;
-}
-
-.footer-form-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-icon-send {

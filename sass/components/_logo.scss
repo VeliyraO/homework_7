@@ -7,4 +7,7 @@
   color: var(--accent-color);
   animation-duration: 1000ms;
   animation-iteration-count: 3;
+  .header & {
+    margin-right: 90px;
+  }
 }
