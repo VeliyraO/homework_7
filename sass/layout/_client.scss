@@ -8,13 +8,13 @@
   align-items: center;
 }
 
-.client-list-item {
+.client-list__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.client-list-link {
+.client-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +30,11 @@
   }
 }
 
-.client-list-icon {
+.client-list__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .client-list-link:hover &,
-  .client-list-link:focus & {
+  .client-list__link:hover &,
+  .client-list__link:focus & {
     fill: #2196f3;
   }
 }

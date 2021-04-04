@@ -1,4 +1,4 @@
-.logo-link {
+.logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -10,4 +10,14 @@
   .header & {
     margin-right: 90px;
   }
+}
+
+.logo_white {
+  font-family: var(--secondary-font);
+  color: var(--white-accent);
+}
+
+.logo_dark {
+  font-family: var(--secondary-font);
+  color: var(--logo-decoration);
 }

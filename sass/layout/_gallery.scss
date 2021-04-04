@@ -9,30 +9,12 @@
   margin-top: -30px;
 }
 
-.gallery-list-item {
+.gallery-list__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.gallery-list-title {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-accent);
-  background: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
-  padding: 26px 82px;
-}
-
-.gallery-list-wraper {
+.gallery-list__wraper {
   position: relative;
 }

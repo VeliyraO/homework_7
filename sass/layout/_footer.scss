@@ -2,7 +2,7 @@
   background-color: var(--background-accent);
   padding-top: 60px;
   padding-bottom: 60px;
-  & .logo-link {
+  & .logo {
     margin-bottom: 20px;
   }
   & .container {
@@ -11,7 +11,7 @@
   }
 }
 
-.footer-address {
+.address-footer {
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,7 @@
   margin-right: 70px;
 }
 
-.logo-white {
-  font-family: var(--secondary-font);
-  color: var(--white-accent);
-}
-
-.contact-link-footer {
+.address-footer__link {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
@@ -47,8 +42,12 @@
   color: var(--white-accent);
 }
 
-.social-title {
-  font-style: normal;
+.mailing {
+  margin-left: auto;
+}
+
+.mailing__item {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -58,17 +57,7 @@
   margin-bottom: 20px;
 }
 
-.social-list-item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-}
-
-.mailing {
-  margin-left: auto;
-}
-
-.footer-form-input {
+.mailing__input {
   display: flex;
   width: 358px;
   height: 50px;
@@ -88,23 +77,12 @@
   }
 }
 
-.mailing-form {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-accent);
-  margin-bottom: 20px;
-}
-
-.footer-form {
+.mailing__form {
   display: flex;
   align-items: stretch;
 }
 
-.footer-btn {
+.mailing__btn {
   display: inline-flex;
   font-weight: 700;
   font-size: 16px;
@@ -118,7 +96,7 @@
   padding: 10px 30px;
 }
 
-.footer-icon-send {
+.mailing__icon {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
